@@ -1,0 +1,162 @@
+/* Base styles */
+.body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+  
+}
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.heading p {
+  text-align: center;
+  font-size: 20px;
+  color: #bc1000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.heading h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin: 10px 0 30px;
+}
+
+/* Pricing styles */
+.price {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.price-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1 1 calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: fadeIn 1s ease-out;
+}
+
+.price-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.price-wrapper {
+  padding: 20px;
+  text-align: center;
+}
+
+.info img {
+  width: 60px;
+  margin-bottom: 10px;
+  animation: pulse 2s infinite;
+}
+
+.info p {
+  color: #bc1000;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.info b {
+  font-size: 24px;
+  color: #333;
+  margin-top: 5px;
+  display: block;
+}
+
+.text p {
+  font-size: 16px;
+  color: #555;
+  margin: 15px 0;
+}
+
+.details p {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.details .bold {
+  color: #bc1000;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0 0;
+  color: #555;
+}
+
+.details ul li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.details ul li:before {
+  content: '✔';
+  position: absolute;
+  left: -25px;
+  color: #bc1000;
+  font-size: 16px;
+}
+
+button {
+  background: #9c0e01;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #bc1000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(255, 111, 97, 0.5);
+  }
+  50% {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(255, 111, 97, 0.7);
+  }
+}

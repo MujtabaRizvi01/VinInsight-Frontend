@@ -1,0 +1,26 @@
+{
+  "name": "vininsight",
+  "version": "1.0.0",
+  "description": "A full stack website for the cars or automobiles to get their organic vin report by our side ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Minhal128/VinInsight.git"
+  },
+  "keywords": [
+    "vininsight"
+  ],
+  "author": "Minhal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Minhal128/VinInsight/issues"
+  },
+  "homepage": "https://github.com/Minhal128/VinInsight#readme",
+  "dependencies": {
+    "fund": "^1.0.0",
+    "three": "^0.171.0"
+  }
+}

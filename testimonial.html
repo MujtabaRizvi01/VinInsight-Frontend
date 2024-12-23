@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Vin Insight</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF0000', // Red for primary accents
+                        secondary: '#000000', // Black for backgrounds and text
+                        light: '#FFFFFF' // White for contrast
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        display: ['Oswald', 'sans-serif']
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body class="bg-secondary text-light font-sans">
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-secondary">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-display font-bold text-primary mb-6">What Our Customers Say</h2>
+            <p class="text-lg mb-12">Hear from some of our satisfied customers about their experience with Vin Insight.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-black p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50" alt="User 1" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="text-lg font-bold">John Doe</h4>
+                            <p class="text-sm text-gray-400">Car Enthusiast</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Vin Insight made my car buying experience seamless and enjoyable. Highly recommended!"</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-black p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50" alt="User 2" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="text-lg font-bold">Jane Smith</h4>
+                            <p class="text-sm text-gray-400">Auto Dealer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"The insights and tools provided by Vin Insight are unmatched in the industry."</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-black p-6 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://via.placeholder.com/50" alt="User 3" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="text-lg font-bold">Alex Brown</h4>
+                            <p class="text-sm text-gray-400">Happy Customer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300">"Exceptional service and attention to detail. Vin Insight is the best!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary py-6">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">&copy; 2024 Vin Insight. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
